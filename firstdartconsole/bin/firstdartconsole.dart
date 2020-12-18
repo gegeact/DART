@@ -1,5 +1,7 @@
-import 'package:firstdartconsole/firstdartconsole.dart' as firstdartconsole;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${firstdartconsole.calculate()}!');
+main(List<String> arguments) {
+  String input = stdin.readLineSync();
+  double number = double.tryParse(input);
+  print(number + 10);
 }
